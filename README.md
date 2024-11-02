@@ -1,4 +1,4 @@
-Here's a sample README file for your **Xerox Management System** project:
+Here's a README file for **Xerox Management System** project:
 
 ---
 
