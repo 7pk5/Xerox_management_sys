@@ -47,33 +47,6 @@ The **Xerox Management System** is an efficient online platform that streamlines
 
 ---
 
-## Installation
-
-To set up this project locally, follow these steps:
-
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/yourusername/xerox-management-system.git
-   cd xerox-management-system
-   ```
-
-2. **Install Dependencies**:
-   ```bash
-   npm install  # or pip install -r requirements.txt for Python dependencies
-   ```
-
-3. **Configure Environment Variables**: Add necessary environment variables for payment integration, database, etc.
-
-4. **Run the Application**:
-   ```bash
-   npm start  # for Node.js
-   python app.py  # for Python
-   ```
-
-5. **Access the Application**: Open your browser and go to `http://localhost:3000`.
-
----
-
 ## Technologies Used
 
 - **Frontend**: HTML, CSS, JavaScript
