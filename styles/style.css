@@ -15,29 +15,45 @@ header{
     justify-content: space-around;
     align-items: center;
     padding-top: 10px;
+
 }
-.logo{
+.logo a{
     display: flex;
     justify-content: center;
     align-items: center;
+    color: black;
 }
 .logo h1{
     font-size: 42px;
     font-weight: normal;
 }
 .logo img{
-    width:  80px;
-    height: 100px;
+    object-fit: contain;
+    width:  70px;
+    height: 82px;
 }
 nav ul{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 20px;
 }
 nav ul li{
     list-style: none;
     font-size: 18px;
+   
+}
+nav ul li a{
+    padding: 8px 12px;
+    color: black;
+    background-color: #fff;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    padding: 8px 12px;
+    color: #fff;
+    background-color: black;
+    border-radius: 10px;
 }
 a{
     text-decoration: none;
@@ -48,17 +64,24 @@ a{
     align-items: center;
     gap: 30px;
 }
-.login button{
-    padding: 8px 18px;
+#log-btn{
+    padding: 10px 18px;
     border-radius: 10px;
     font-size: 22px;
-    background-color: #fff;
+    color: white;
+    background-color: black;
 }
+#log-img{
+    width:  38px;
+    height: 38px;
+}
+
 .main1{
     margin-top: 3rem;
     display: flex;
     align-items:center;
     justify-content: space-evenly;
+    margin-top: 4rem;
 }
 .main1-left{
     max-width: 40%;
@@ -69,12 +92,16 @@ a{
 }
 .main1-left h1{
     font-size: 3em;
-    font-weight: 400;
+    font-weight: 450;
     margin-bottom: 2rem;
 }
 .main1-left p{
     font-size: 18px;
-    margin-bottom: 2rem; 
+    margin-bottom: 1rem;
+    line-height: 30px; 
+}
+#para{
+    margin-bottom: 3rem;
 }
 .main1-left a{
     font-size: 28px;
@@ -85,7 +112,6 @@ a{
 }
 
 strong{
-
     background-color: yellow;
     padding: 0px 8px;
     text-align: center;
@@ -95,4 +121,60 @@ strong{
     height: 380px;
     object-fit: cover;
     border-radius: 20px;
+}
+.main2{
+    margin-top: 6rem;
+}
+.main2 h1{
+    font-weight: normal;
+    font-size: 40px;
+    text-align: center;
+}
+.main3{
+    margin-top: 4rem;
+}
+.main3 h1{
+    font-weight: normal;
+    font-size: 40px;
+    text-align: center;
+}
+.main3-container{
+    width: 500px;
+    border: 1px solid #F4F4F4;
+    padding: 35px;
+    border-radius: 18px;
+    background-color: #F4F4F4;
+}
+.main3-container p{
+    padding-top: 20px ;
+    line-height: 20px;
+}
+#main3-info{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+}
+#main3-info img{
+    width:  60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.main3-cards{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 5rem;
+}
+.head{
+    font-weight: normal;
+}
+.head h1{
+    font-size: 22px;
+}
+.head h3{
+    font-size: 18px;
+    color: rgb(159, 159, 159);
 }
