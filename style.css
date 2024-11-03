@@ -80,15 +80,16 @@ a{
     margin-top: 3rem;
     display: flex;
     align-items:center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     margin-top: 4rem;
 }
 .main1-left{
-    max-width: 40%;
+    width: 40%;
+    margin-left: 4rem;
     
 }
 .main1-right{
-    max-width: 40%;
+    width: 38%;
 }
 .main1-left h1{
     font-size: 3em;
@@ -124,11 +125,90 @@ strong{
 }
 .main2{
     margin-top: 6rem;
+   
 }
 .main2 h1{
     font-weight: normal;
     font-size: 40px;
     text-align: center;
+}
+.how-it-works-container {
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    padding: 00px 40px;
+    width: 100%;
+}
+.steps-container {
+    flex: 1;
+    padding-right: 30px;
+    position: relative;
+    border-right: 1px solid white;
+    height: 500px; /* Fixed height for consistency */
+    overflow: hidden; /* Prevent overflow issues */
+    margin-top: 80px;
+    margin-left: 85px;
+}
+.step {
+    margin-bottom: 15px;
+    cursor: pointer;
+    padding: 10px 0 10px 15px;
+    position: relative;
+    color: #333;
+    transition: color 0.3s;
+}
+.step:hover {
+    color: black;
+}
+.step-title {
+    font-size: 26px;
+    font-weight: normal;
+}
+.step-description {
+    font-size: 18px;
+    color: #666;
+    display: none;
+    margin-top: 5px;
+}
+.image-container {
+    flex: 1;
+    padding-left: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+.image-container img {
+    object-fit: cover;
+    height: 380px;  
+    width: 600px;
+    border-radius: 20px;
+}
+.step.active .step-description {
+    display: block;
+}
+/* Vertical line effect */
+.vertical-line {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 5px;
+    background-color: white ;
+    transition: background-color 0.3s;
+}
+.step.active .vertical-line {
+    background-color: black;
+}
+@keyframes drop {
+    0% {
+        height: 0;
+        top: 0;
+    }
+    100% {
+        height: 100%;
+        top: 0;
+    }
 }
 .main3{
     margin-top: 4rem;
@@ -177,4 +257,57 @@ strong{
 .head h3{
     font-size: 18px;
     color: rgb(159, 159, 159);
+} 
+.main4{
+    margin-top: 8rem;
+    
 }
+.main4 h1{
+    font-weight: normal;
+    font-size: 40px;
+    text-align: center ;
+    margin-bottom: 20px;    
+} 
+.qa-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px; /* Adds some padding around the entire FAQ section */
+}
+
+.question-container {
+    width: 800px;
+}
+
+.question {
+    border: 1px solid black;
+    margin-bottom: 1.3rem;
+    padding: 1rem; /* Adds padding inside the border */
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers content horizontally within the border */
+}
+
+.question h2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: normal;
+    width: 100%; /* Ensure the heading takes the full width */
+    text-align: center; /* Center-aligns text within h2 */
+    cursor: pointer;
+    font-size: 20px
+}
+
+.faq-toggle-icon {
+    margin-left: auto;
+}
+
+.answer {
+    line-height: 1.4;
+    width: 100%; /* Takes the full width of the container */
+    /* text-align: center; Centers text within the answer */
+    padding-top: 16px;
+}
+

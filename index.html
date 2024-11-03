@@ -47,14 +47,61 @@
             </div>
         </section>
         <!-- section 2 -->
-        <section class="main2">
-            <h1>How it Works</h1>   
-            <div class="main2-left">
 
+        <section class="main2">
+            <h1>How it Works</h1>
+            <div class="main2-magic">
+                <div class="how-it-works-container">
+                    <div class="steps-container">
+                        
+                        <!-- Step 1 -->
+                        <div class="step" onclick="selectStep(0)">
+                            <div class="vertical-line"></div>
+                            <div class="step-title">Upload Your Documents</div>
+                            <div class="step-description">Choose your files from your phone or computer—whether it's a class assignment, notes, or study material.</div>
+                        </div>
+            
+                        <!-- Step 2 -->
+                        <div class="step" onclick="selectStep(1)">
+                            <div class="vertical-line"></div>
+                            <div class="step-title">Add Custom Notes</div>
+                            <div class="step-description">Include any specific instructions for printing, such as paper size or color preferences.</div>
+                        </div>
+            
+                        <!-- Step 3 -->
+                        <div class="step" onclick="selectStep(2)">
+                            <div class="vertical-line"></div>
+                            <div class="step-title">Pay Online</div>
+                            <div class="step-description">Complete your payment using our secure online payment gateway.</div>
+                        </div>
+            
+                        <!-- Step 4 -->
+                        <div class="step" onclick="selectStep(3)">
+                            <div class="vertical-line"></div>
+                            <div class="step-title">Track Your Order</div>
+                            <div class="step-description">Stay updated with real-time notifications on the status of your order.</div>
+                        </div>
+            
+                        <!-- Step 5 -->
+                        <div class="step" onclick="selectStep(4)">
+                            <div class="vertical-line"></div>
+                            <div class="step-title">Pickup Without Waiting</div>
+                            <div class="step-description">Collect your printed documents at your convenience without standing in line.</div>
+                        </div>
+                    </div>
+            
+                    <div class="image-container">
+                        <img src="/assets/crowd.jpg" alt="Upload Your Documents" id="step-image-0">
+                        <img src="/assets/right-main.jpg" alt="Add Custom Notes" id="step-image-1">
+                        <img src="/assets/right-main2.jpg" alt="Pay Online" id="step-image-2">
+                        <img src="/assets/crowd.jpg" alt="Track Your Order" id="step-image-3">
+                        <img src="/assets/crowd.jpg" alt="Pickup Without Waiting" id="step-image-4">
+                    </div>
+                </div>
             </div>
-            <div class="main2-right">
-                 
-            </div>
+            
+              
+              
         </section>
         <!-- section 3 -->
         <section class="main3">
@@ -92,8 +139,50 @@
             </div>
         </section>
         <!-- section4 -->
-        <section class="maini4">
+        <section class="main4">
             <h1>FAQ's</h1>
+            <div class="qa-box">
+                <div class="question-container">
+                    <div class="question">
+                        <h2>Q: Can I cancel or modify my order after placing it?  <span class="faq-toggle-icon">▼</span></h2>
+                        <div class="answer">
+                            <p>A: If you need to cancel or make changes, please contact us as soon as possible. Once printing has started, modifications may not be possible. However, we’ll do our best to accommodate your request if it’s within our control.</p>
+                        </div>
+                    </div>
+                    <div class="question">
+                        <h2>Q: How long does it take to complete an order?  <span class="faq-toggle-icon">▼</span></h2>
+                        <div class="answer">
+                            <p>A: Most orders are completed within 10–15 minutes, depending on the number of pages and any custom instructions. During peak hours, there may be a slight delay, but we strive to complete all orders as quickly as possible.</p>
+                        </div>
+                    </div>
+                    <div class="question">
+                        <h2>Q: Is my data secure on the platform?  <span class="faq-toggle-icon">▼</span></h2>
+                        <div class="answer">
+                            <p>A: Yes, data security is our top priority. All files are encrypted during upload, storage, and download. We also follow strict security protocols to ensure your documents remain private and are only accessible to you and our authorized personnel.</p>
+                        </div>
+                    </div>
+                    <div class="question">
+                        <h2>Q: Do you offer delivery services?  <span class="faq-toggle-icon">▼</span></h2>
+                        <div class="answer">
+                            <p>A: Currently, we offer convenient in-store pickup for all orders. We’re exploring delivery options in the near future to make it even easier for you to get your documents without leaving your home or campus.</p>
+                        </div>
+                    </div>
+                    <div class="question">
+                        <h2>Q: What file formats are supported?  <span class="faq-toggle-icon">▼</span></h2>
+                        <div class="answer">
+                            <p>A: We support popular file formats such as PDF, DOC, DOCX, JPG, and PNG. This ensures flexibility in uploading various document types for printing.</p>
+                        </div>
+                    </div>
+                    <div class="question">
+                        <h2>Q: Can I reprint a previous order?  <span class="faq-toggle-icon">▼</span></h2>
+                        <div class="answer">
+                            <p>A: Yes, you can reprint previous orders. Simply access your order history, select the order you want to reprint, and follow the instructions. This feature is designed to save time and make reordering as convenient as possible.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+           
         </section>
     </main>
     <!-- footer -->
@@ -107,6 +196,7 @@
         </div>
     </footer>
     <!-- scripts -->
+     <script src="./script.js"></script>
     <script src="https://kit.fontawesome.com/63e698b626.js" crossorigin="anonymous"></script>
 </body>
 </html>
